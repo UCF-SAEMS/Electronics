@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Cree_XML_Driver-cache)(type Legacy)(uri ${KIPRJMOD}/Cree_XML_Driver-cache.lib)(options "")(descr ""))
+  (lib (name Cree_XML_Driver-rescue)(type Legacy)(uri ${KIPRJMOD}/Cree_XML_Driver-rescue.lib)(options "")(descr ""))
+)
