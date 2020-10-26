@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -19430,4 +19430,15 @@ I2C_SDA
 Text GLabel 5900 3900 0    40   Input ~ 0
 I2C_SCL
 NoConn ~ 8700 7250
+Wire Wire Line
+	1000 5800 1500 5800
+Text Label 1000 5800 0    50   ~ 0
+CO_ADC
+$Sheet
+S 1500 5650 900  600 
+U 5F98DBF7
+F0 "Sensor CO" 50
+F1 "sensor_co.sch" 50
+F2 "VOUT" O L 1500 5800 50 
+$EndSheet
 $EndSCHEMATC
