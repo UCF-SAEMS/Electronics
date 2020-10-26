@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -19435,10 +19435,21 @@ Wire Wire Line
 Text Label 1000 5800 0    50   ~ 0
 CO_ADC
 $Sheet
+S 1500 6500 900  600 
+U 5F97F9E8
+F0 "Sensor VOC" 50
+F1 "sensor_voc.sch" 50
+F2 "VOC_INT" O L 1500 6650 50 
+$EndSheet
+$Sheet
 S 1500 5650 900  600 
 U 5F98DBF7
 F0 "Sensor CO" 50
 F1 "sensor_co.sch" 50
 F2 "VOUT" O L 1500 5800 50 
 $EndSheet
+Wire Wire Line
+	1000 6650 1500 6650
+Text Label 1000 6650 0    50   ~ 0
+VOC_INT
 $EndSCHEMATC
