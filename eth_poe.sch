@@ -1418,7 +1418,7 @@ $EndComp
 Wire Wire Line
 	7200 4300 7200 4400
 $Comp
-L SD1-rescue:W5500-Interface_Ethernet U105
+L Interface_Ethernet:W5500 U105
 U 1 1 5FAC6941
 P 7100 3100
 AR Path="/5FAC6941" Ref="U105"  Part="1" 

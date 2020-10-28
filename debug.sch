@@ -170,7 +170,7 @@ Wire Wire Line
 Wire Wire Line
 	1500 6150 1500 6250
 $Comp
-L SD1-rescue:FTDI_TTL_Cable-mylib J?
+L mylib:FTDI_TTL_Cable J?
 U 1 1 5FF49A50
 P 1800 2650
 AR Path="/5FF49A50" Ref="J?"  Part="1" 
