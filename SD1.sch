@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L mylib:CC2652P U104
+L SD1-rescue:CC2652P-mylib U104
 U 1 1 5F5DA505
 P 7850 3300
 F 0 "U104" H 7900 1303 60  0000 C CNN
@@ -1229,7 +1229,7 @@ A2 46 6F C0 32 5C C6 00 00 00 00 49 45 4E 44 AE 42 60 82
 EndData
 $EndBitmap
 $Comp
-L mylib:Multifunction_Switch SW104
+L SD1-rescue:Multifunction_Switch-mylib SW104
 U 1 1 5F899D75
 P 5350 9300
 F 0 "SW104" H 5350 9667 50  0000 C CNN
@@ -1294,7 +1294,7 @@ Wire Wire Line
 Wire Wire Line
 	5650 9400 5700 9400
 $Comp
-L mylib:Multidirection_Switch SW103
+L SD1-rescue:Multidirection_Switch-mylib SW103
 U 1 1 5F978A8D
 P 3750 9300
 F 0 "SW103" H 3750 9667 50  0000 C CNN
@@ -1539,7 +1539,7 @@ SPKR_Alt
 Text Label 7050 2500 2    50   ~ 0
 SPKR
 $Comp
-L mylib:ER-TFTM028-4 U102
+L SD1-rescue:ER-TFTM028-4-mylib U102
 U 1 1 5F69622B
 P 12900 2700
 F 0 "U102" H 12900 4765 50  0000 C CNN
@@ -1553,7 +1553,7 @@ F 6 "C132132" H 12900 2700 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 $Comp
-L mylib:ER-TFTM028-4 U102
+L SD1-rescue:ER-TFTM028-4-mylib U102
 U 2 1 5F6972E3
 P 15450 1450
 F 0 "U102" H 15350 2300 50  0000 L CNN
@@ -14838,7 +14838,7 @@ NoConn ~ 7100 10000
 NoConn ~ 7100 10500
 NoConn ~ 7100 10700
 $Comp
-L mylib:RECAPS_Master_r0 J?
+L SD1-rescue:RECAPS_Master_r0-mylib J?
 U 1 1 5FAEBA7D
 P 7400 10250
 AR Path="/5B315020/5FAEBA7D" Ref="J?"  Part="1" 

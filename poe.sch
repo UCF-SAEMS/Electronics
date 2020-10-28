@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L mylib:HR051067 T?
+L SD1-rescue:HR051067-mylib T?
 U 1 1 5F85962B
 P 10350 4400
 AR Path="/5F85962B" Ref="T?"  Part="1" 
@@ -66,7 +66,7 @@ F 5 "C181879" H 10350 7350 50  0001 C CNN "LCSC"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L mylib:TPS23753A U201
+L SD1-rescue:TPS23753A-mylib U201
 U 1 1 5F6FB03A
 P 7000 5400
 AR Path="/5F6FB03A" Ref="U201"  Part="1" 
@@ -1326,7 +1326,7 @@ F 11 "CAP CER 0.1UF X7R 100V 0805" H 5000 5550 50  0001 C CNN "Note"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:FDC2512 Q201
+L SD1-rescue:FDC2512-Transistor_FET Q201
 U 1 1 5F7D1B09
 P 9250 5500
 AR Path="/5F81C554/5F7D1B09" Ref="Q201"  Part="1" 
