@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title ""
 Date ""
 Rev ""
@@ -19452,4 +19452,121 @@ Wire Wire Line
 	1000 6650 1500 6650
 Text Label 1000 6650 0    50   ~ 0
 VOC_INT
+$Sheet
+S 3100 5650 900  600 
+U 5F9DB5BA
+F0 "Sensor Smoke" 50
+F1 "sensor_smoke.sch" 50
+$EndSheet
+$Comp
+L mylib:EKMC1691111 U106
+U 1 1 5FA05437
+P 4350 7500
+F 0 "U106" H 4628 7546 50  0000 L CNN
+F 1 "EKMC1691111" H 4628 7455 50  0000 L CNN
+F 2 "" H 4350 6650 50  0001 C CNN
+F 3 "https://www3.panasonic.biz/ac/ae/search_num/index.jsp?c=detail&part_no=EKMC1691111" H 4350 6650 50  0001 C CNN
+F 4 "EKMC1691111" H 4350 7500 50  0001 C CNN "MPN"
+F 5 "255-6303-ND" H 4350 7500 50  0001 C CNN "Digikey"
+F 6 "Sensor PIR (Passive Infrared) 98.425\" (2.5m) - Module" H 4350 7500 50  0001 C CNN "Note"
+	1    4350 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FA069F2
+P 4350 6800
+AR Path="/5E715318/5FA069F2" Ref="#PWR?"  Part="1" 
+AR Path="/5FA069F2" Ref="#PWR0181"  Part="1" 
+F 0 "#PWR0181" H 4350 6650 50  0001 C CNN
+F 1 "+3.3V" H 4365 6973 50  0000 C CNN
+F 2 "" H 4350 6800 50  0001 C CNN
+F 3 "" H 4350 6800 50  0001 C CNN
+	1    4350 6800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5FA0C8AA
+P 4550 7000
+AR Path="/5F98DBF7/5FA0C8AA" Ref="C?"  Part="1" 
+AR Path="/5FA0C8AA" Ref="C109"  Part="1" 
+F 0 "C109" H 4642 7046 50  0000 L CNN
+F 1 ".1u" H 4642 6955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4550 7000 50  0001 C CNN
+F 3 "~" H 4550 7000 50  0001 C CNN
+F 4 "311-1336-1-ND" H 4550 7000 50  0001 C CNN "Digikey"
+F 5 "10%" H 4550 7000 50  0001 C CNN "Error"
+F 6 "C129131" H 4550 7000 50  0001 C CNN "LCSC"
+F 7 "CC0402KRX5R6BB104" H 4550 7000 50  0001 C CNN "MPN"
+F 8 "CAP CER 0.1UF 10V X5R 0402" H 4550 7000 50  0001 C CNN "Note"
+	1    4550 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 6850 4350 6850
+Wire Wire Line
+	4350 6800 4350 6850
+Connection ~ 4350 6850
+Wire Wire Line
+	4350 6850 4350 7150
+Wire Wire Line
+	4550 6900 4550 6850
+$Comp
+L power:GND #PWR0182
+U 1 1 5FA287E8
+P 4550 7150
+F 0 "#PWR0182" H 4550 6900 50  0001 C CNN
+F 1 "GND" H 4700 7100 50  0000 C CNN
+F 2 "" H 4550 7150 50  0001 C CNN
+F 3 "" H 4550 7150 50  0001 C CNN
+	1    4550 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 7150 4550 7100
+$Comp
+L power:GND #PWR0183
+U 1 1 5FA3C76C
+P 4350 7950
+F 0 "#PWR0183" H 4350 7700 50  0001 C CNN
+F 1 "GND" H 4500 7900 50  0000 C CNN
+F 2 "" H 4350 7950 50  0001 C CNN
+F 3 "" H 4350 7950 50  0001 C CNN
+	1    4350 7950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 7900 4350 7850
+Wire Wire Line
+	3500 7500 3950 7500
+Text Label 3500 7500 0    50   ~ 0
+PIR_SENSE
+Wire Wire Line
+	3950 7850 3950 7900
+Wire Wire Line
+	3950 7900 4350 7900
+Connection ~ 4350 7900
+Wire Wire Line
+	4350 7950 4350 7900
+Wire Wire Line
+	3950 7550 3950 7500
+Connection ~ 3950 7500
+Wire Wire Line
+	3950 7500 4000 7500
+Text Notes 3900 7900 2    30   ~ 0
+Use 33k - 100k
+$Comp
+L Device:R_US R?
+U 1 1 5FAB260D
+P 3950 7700
+AR Path="/5FED2126/5FAB260D" Ref="R?"  Part="1" 
+AR Path="/5FAB260D" Ref="R107"  Part="1" 
+F 0 "R107" H 4017 7654 50  0000 L CNN
+F 1 "47.5k" H 4017 7745 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3950 7700 60  0001 C CNN
+F 3 "" H 3950 7700 60  0001 C CNN
+	1    3950 7700
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
