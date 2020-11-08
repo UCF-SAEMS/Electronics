@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 4 7
+Sheet 4 8
 Title ""
 Date ""
 Rev ""
@@ -176,41 +176,41 @@ Wire Wire Line
 $Comp
 L mylib:FTDI_TTL_Cable J?
 U 1 1 5FF49A50
-P 1800 2650
+P 2250 2650
 AR Path="/5FF49A50" Ref="J?"  Part="1" 
 AR Path="/5FED2126/5FF49A50" Ref="J403"  Part="1" 
-F 0 "J403" H 1792 2179 60  0000 C CNN
-F 1 "FTDI_TTL_Cable" H 1792 2277 49  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" V 1800 2550 60  0001 C CNN
-F 3 "" V 1525 2725 60  0001 C CNN
-	1    1800 2650
+F 0 "J403" H 2242 2179 60  0000 C CNN
+F 1 "FTDI_TTL_Cable" H 2242 2277 49  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" V 2250 2550 60  0001 C CNN
+F 3 "" V 1975 2725 60  0001 C CNN
+	1    2250 2650
 	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5FF49A56
-P 1350 3000
+P 1800 3000
 AR Path="/5FF49A56" Ref="#PWR?"  Part="1" 
 AR Path="/5FED2126/5FF49A56" Ref="#PWR0124"  Part="1" 
-F 0 "#PWR0124" H 1350 2750 50  0001 C CNN
-F 1 "GND" H 1355 2827 50  0000 C CNN
-F 2 "" H 1350 3000 50  0001 C CNN
-F 3 "" H 1350 3000 50  0001 C CNN
-	1    1350 3000
+F 0 "#PWR0124" H 1800 2750 50  0001 C CNN
+F 1 "GND" H 1805 2827 50  0000 C CNN
+F 2 "" H 1800 3000 50  0001 C CNN
+F 3 "" H 1800 3000 50  0001 C CNN
+	1    1800 3000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1400 2900 1350 2900
+	1850 2900 1800 2900
 Wire Wire Line
-	1350 2900 1350 3000
+	1800 2900 1800 3000
 Wire Wire Line
-	1350 2800 1400 2800
+	1800 2800 1850 2800
 Wire Wire Line
-	1350 2400 1400 2400
+	1800 2400 1850 2400
 Wire Wire Line
-	1350 2500 1400 2500
+	1800 2500 1850 2500
 Wire Wire Line
-	1350 2600 1400 2600
+	1800 2600 1850 2600
 Text HLabel 1150 800  0    50   Input ~ 0
 WMCU_SWO
 Text HLabel 1150 900  0    50   Input ~ 0
@@ -766,29 +766,42 @@ Text HLabel 6900 3100 2    50   Input ~ 0
 WMCU_RXD
 Text HLabel 6900 2900 2    50   Input ~ 0
 WMCU_RTS
-Text HLabel 1350 2600 0    50   Input ~ 0
+Text HLabel 1800 2600 0    50   Input ~ 0
 WMCU_RXD
-Text HLabel 1350 2500 0    50   Input ~ 0
+Text HLabel 1800 2500 0    50   Input ~ 0
 WMCU_TXD
-Text HLabel 1350 2800 0    50   Input ~ 0
+Text HLabel 1800 2800 0    50   Input ~ 0
 WMCU_RTS
-Text HLabel 1350 2400 0    50   Input ~ 0
+Text HLabel 1800 2400 0    50   Input ~ 0
 WMCU_CTS
+Wire Wire Line
+	1850 2700 1200 2700
 $Comp
-L power:+5V #PWR?
-U 1 1 5FF49A68
-P 750 2550
-AR Path="/5FF49A68" Ref="#PWR?"  Part="1" 
-AR Path="/5FED2126/5FF49A68" Ref="#PWR0180"  Part="1" 
-F 0 "#PWR0180" H 750 2400 50  0001 C CNN
-F 1 "+5V" H 765 2723 50  0000 C CNN
-F 2 "" H 750 2550 50  0001 C CNN
-F 3 "" H 750 2550 50  0001 C CNN
-	1    750  2550
+L Device:Jumper_NO_Small JP?
+U 1 1 5FCE30FC
+P 1100 2700
+F 0 "JP?" H 1100 2793 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 1100 2794 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1100 2700 50  0001 C CNN
+F 3 "~" H 1100 2700 50  0001 C CNN
+	1    1100 2700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	750  2700 750  2550
+	1000 2700 950  2700
 Wire Wire Line
-	1400 2700 750  2700
+	950  2700 950  2550
+$Comp
+L power:+5V #PWR?
+U 1 1 5FF49A68
+P 950 2550
+AR Path="/5FF49A68" Ref="#PWR?"  Part="1" 
+AR Path="/5FED2126/5FF49A68" Ref="#PWR0180"  Part="1" 
+F 0 "#PWR0180" H 950 2400 50  0001 C CNN
+F 1 "+5V" H 965 2723 50  0000 C CNN
+F 2 "" H 950 2550 50  0001 C CNN
+F 3 "" H 950 2550 50  0001 C CNN
+	1    950  2550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

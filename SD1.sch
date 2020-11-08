@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 7
+Sheet 1 8
 Title ""
 Date ""
 Rev ""
@@ -66,151 +66,8 @@ Text Notes -35300 -1500 1    50   ~ 0
 SERCOM 0
 Text Notes -35300 -1500 1    50   ~ 0
 SERCOM 0
-$Comp
-L Device:C_Small C?
-U 1 1 5E6A4789
-P 2200 1100
-AR Path="/5E360A9B/5E6A4789" Ref="C?"  Part="1" 
-AR Path="/5E6A4789" Ref="C106"  Part="1" 
-AR Path="/5E5C8043/5E5C885F/5E6A4789" Ref="C?"  Part="1" 
-AR Path="/5E5C8043/5E9EE9F0/5E6A4789" Ref="C?"  Part="1" 
-AR Path="/5E5C8043/5EA19CBA/5E6A4789" Ref="C?"  Part="1" 
-AR Path="/5E5C8043/5E49A000/5E6A4789" Ref="C?"  Part="1" 
-AR Path="/5E5C8043/5EAB3002/5E6A4789" Ref="C?"  Part="1" 
-AR Path="/5E5C8043/5E6A4789" Ref="C?"  Part="1" 
-F 0 "C106" H 2108 1146 50  0000 R CNN
-F 1 "1u" H 2108 1055 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2200 1100 50  0001 C CNN
-F 3 "~" H 2200 1100 50  0001 C CNN
-F 4 "TMK107B7105KA-T" H 2200 1100 50  0001 C CNN "MPN"
-F 5 "587-2984-1-ND" H 2200 1100 50  0001 C CNN "Digikey"
-F 6 "CAP CER 1UF 25V X7R 0603" H 2200 1100 50  0001 C CNN "Note"
-	1    2200 1100
-	-1   0    0    -1  
-$EndComp
 Text Notes -35300 -1500 1    50   ~ 0
 SERCOM 0
-Wire Wire Line
-	2100 950  2200 950 
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5E8C9DE5
-P 2450 950
-AR Path="/5E715318/5E8C9DE5" Ref="#PWR?"  Part="1" 
-AR Path="/5E8C9DE5" Ref="#PWR0101"  Part="1" 
-F 0 "#PWR0101" H 2450 800 50  0001 C CNN
-F 1 "+3.3V" H 2465 1123 50  0000 C CNN
-F 2 "" H 2450 950 50  0001 C CNN
-F 3 "" H 2450 950 50  0001 C CNN
-	1    2450 950 
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	2200 1000 2200 950 
-Connection ~ 2200 950 
-Wire Wire Line
-	2200 950  2450 950 
-$Comp
-L power:GND #PWR?
-U 1 1 5E8C9DEE
-P 2200 1450
-AR Path="/5E715318/5E8C9DEE" Ref="#PWR?"  Part="1" 
-AR Path="/5E8C9DEE" Ref="#PWR0109"  Part="1" 
-F 0 "#PWR0109" H 2200 1200 50  0001 C CNN
-F 1 "GND" H 2205 1277 50  0000 C CNN
-F 2 "" H 2200 1450 50  0001 C CNN
-F 3 "" H 2200 1450 50  0001 C CNN
-	1    2200 1450
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	2200 1200 2200 1450
-$Comp
-L power:GND #PWR?
-U 1 1 5E8C9DF5
-P 1800 1450
-AR Path="/5E715318/5E8C9DF5" Ref="#PWR?"  Part="1" 
-AR Path="/5E8C9DF5" Ref="#PWR0108"  Part="1" 
-F 0 "#PWR0108" H 1800 1200 50  0001 C CNN
-F 1 "GND" H 1805 1277 50  0000 C CNN
-F 2 "" H 1800 1450 50  0001 C CNN
-F 3 "" H 1800 1450 50  0001 C CNN
-	1    1800 1450
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	1800 1450 1800 1350
-Wire Wire Line
-	1500 1050 1450 1050
-Wire Wire Line
-	1450 1050 1450 950 
-Connection ~ 1450 950 
-Wire Wire Line
-	1450 950  1500 950 
-Text Notes 1850 1800 0    50   ~ 0
-5.5V, 300mA max
-$Comp
-L Regulator_Linear:TLV70233_SOT23-5 U?
-U 1 1 5E8C9E0D
-P 1800 1050
-AR Path="/5E715318/5E8C9E0D" Ref="U?"  Part="1" 
-AR Path="/5E8C9E0D" Ref="U101"  Part="1" 
-F 0 "U101" H 1800 1392 50  0000 C CNN
-F 1 "TLV70233_SOT23-5" H 1800 1301 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 1800 1375 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/tlv702.pdf" H 1800 1100 50  0001 C CNN
-F 4 "TLV70233DBVR" H 1800 1050 50  0001 C CNN "MPN"
-F 5 "296-32415-1-ND " H 1800 1050 50  0001 C CNN "Digikey"
-F 6 "IC REG LINEAR 3.3V 300MA SOT23-5" H 1800 1050 50  0001 C CNN "Note"
-F 7 "C26833" H 1800 1050 50  0001 C CNN "LCSC"
-F 8 "Texas Instruments" H 1800 1050 50  0001 C CNN "Manufacturer"
-	1    1800 1050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	950  950  1100 950 
-Wire Wire Line
-	1100 1000 1100 950 
-Connection ~ 1100 950 
-Wire Wire Line
-	1100 950  1450 950 
-$Comp
-L power:GND #PWR?
-U 1 1 5E8C9E17
-P 1100 1450
-AR Path="/5E715318/5E8C9E17" Ref="#PWR?"  Part="1" 
-AR Path="/5E8C9E17" Ref="#PWR0107"  Part="1" 
-F 0 "#PWR0107" H 1100 1200 50  0001 C CNN
-F 1 "GND" H 1105 1277 50  0000 C CNN
-F 2 "" H 1100 1450 50  0001 C CNN
-F 3 "" H 1100 1450 50  0001 C CNN
-	1    1100 1450
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	1100 1200 1100 1450
-$Comp
-L Device:C_Small C?
-U 1 1 5E90B519
-P 1100 1100
-AR Path="/5E360A9B/5E90B519" Ref="C?"  Part="1" 
-AR Path="/5E90B519" Ref="C105"  Part="1" 
-AR Path="/5E5C8043/5E5C885F/5E90B519" Ref="C?"  Part="1" 
-AR Path="/5E5C8043/5E9EE9F0/5E90B519" Ref="C?"  Part="1" 
-AR Path="/5E5C8043/5EA19CBA/5E90B519" Ref="C?"  Part="1" 
-AR Path="/5E5C8043/5E49A000/5E90B519" Ref="C?"  Part="1" 
-AR Path="/5E5C8043/5EAB3002/5E90B519" Ref="C?"  Part="1" 
-AR Path="/5E5C8043/5E90B519" Ref="C?"  Part="1" 
-F 0 "C105" H 1008 1146 50  0000 R CNN
-F 1 "1u" H 1008 1055 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1100 1100 50  0001 C CNN
-F 3 "~" H 1100 1100 50  0001 C CNN
-F 4 "TMK107B7105KA-T" H 1100 1100 50  0001 C CNN "MPN"
-F 5 "587-2984-1-ND" H 1100 1100 50  0001 C CNN "Digikey"
-F 6 "CAP CER 1UF 25V X7R 0603" H 1100 1100 50  0001 C CNN "Note"
-	1    1100 1100
-	-1   0    0    -1  
-$EndComp
 Text Notes 14550 11650 0    60   ~ 0
 Barrel Jack:\n5.5mm OD\n2.1mm ID/Pole
 Text Notes -35300 -1500 1    50   ~ 0
@@ -528,8 +385,6 @@ BF 43 0A 54 E8 7D 02 E1 69 38 04 0D 78 55 40 85 8E 32 24 40 3F 76 28 43 02 54 E8
 28 43 82 FF 03 5F C3 CD 86 72 88 C6 CF 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
-Text GLabel 950  950  0    50   Input ~ 0
-SYS_PWR
 $Comp
 L Transistor_FET:BSS138 Q101
 U 1 1 5FB1CC9E
@@ -20033,4 +19888,16 @@ F 3 "" H 14300 7300 50  0001 C CNN
 	1    14300 7300
 	-1   0    0    -1  
 $EndComp
+$Sheet
+S 3100 4750 900  600 
+U 5FAF778C
+F0 "Power" 50
+F1 "power.sch" 50
+$EndSheet
+Text GLabel 4950 3450 0    50   Input ~ 0
+5V_MainDet
+Wire Wire Line
+	4500 3600 4950 3600
+Text Label 4500 3600 0    50   ~ 0
+EN_5V_BST
 $EndSCHEMATC
