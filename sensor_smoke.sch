@@ -558,4 +558,19 @@ F 3 "" H 6650 4150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2900 1600 3100 1600
+$Comp
+L mylib:Chamber U503
+U 1 1 5FB92C1C
+P 7800 6150
+F 0 "U503" H 7800 6465 50  0001 C CNN
+F 1 "Smoke Chamber" H 8128 6200 50  0000 L CNN
+F 2 "mylib:ADPD188BI_Chamber" H 7800 6150 50  0001 C CNN
+F 3 "" H 7800 6150 50  0001 C CNN
+F 4 "3D printed smoke chamber" H 7800 6150 50  0001 C CNN "Note"
+F 5 "1" H 7800 6150 50  0001 C CNN "DNP"
+	1    7800 6150
+	1    0    0    -1  
+$EndComp
+Text Notes 7500 6350 0    50   ~ 0
+2x: https://www.mcmaster.com/90218A214/
 $EndSCHEMATC
