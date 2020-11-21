@@ -1339,7 +1339,7 @@ F 3 "https://www.buydisplay.com/2-8-inch-tft-touch-shield-for-arduino-w-capaciti
 	2    15450 1450
 	1    0    0    -1  
 $EndComp
-Text Notes 13700 2750 0    50   ~ 0
+Text Notes 13700 2850 0    50   ~ 0
 The Serial 4wire SPI  MCU interface I  Reference Example
 Text GLabel 14950 1150 0    40   BiDi ~ 0
 I2C_SDA
@@ -1351,7 +1351,7 @@ Text GLabel 13450 1550 2    40   Input ~ 0
 SPI_MOSI
 Text GLabel 13850 1700 2    40   Output ~ 0
 SPI_MISO
-Text Label 4100 4450 0    50   ~ 0
+Text Label 11150 1750 2    50   ~ 0
 SD_CS
 Text Label 11150 2050 2    50   ~ 0
 FONT_CS
@@ -1396,8 +1396,6 @@ Text Label 14050 1250 2    50   ~ 0
 LCD_DC
 Text Label 11150 1950 2    50   ~ 0
 LCD_DC
-Text Label 14300 850  0    50   ~ 0
-LCD_BACKLIGHT
 Text Label 4100 4250 0    50   ~ 0
 LCD_BACKLIGHT
 Wire Wire Line
@@ -14362,8 +14360,6 @@ EndData
 $EndBitmap
 Text Notes 16850 750  0    50   ~ 0
 See: https://www.buydisplay.com/download/interfacing/ER-TFT028-4_CTP_Interfacing.pdf
-Wire Wire Line
-	14300 850  14950 850 
 Text Label 14550 1650 0    50   ~ 0
 FONT_CS
 Text Label 14550 1550 0    50   ~ 0
@@ -20067,4 +20063,56 @@ F 3 "" H 6500 4700 50  0001 C CNN
 	1    6500 4700
 	-1   0    0    -1  
 $EndComp
+Wire Wire Line
+	11150 1750 10650 1750
+Text GLabel 5800 3900 0    50   Input ~ 0
+BATT_Det
+Wire Wire Line
+	14300 850  14950 850 
+Text Label 14300 850  0    50   ~ 0
+LCD_BACKLIGHT
+Wire Wire Line
+	14350 2500 15000 2500
+Text Label 14350 2500 0    50   ~ 0
+LCD_BACKLIGHT
+$Comp
+L Device:R_US R?
+U 1 1 5FC4D37E
+P 15150 2500
+AR Path="/5E360A9B/5FC4D37E" Ref="R?"  Part="1" 
+AR Path="/5FC4D37E" Ref="R?"  Part="1" 
+AR Path="/5E5C8043/5E5C885F/5FC4D37E" Ref="R?"  Part="1" 
+AR Path="/5E5C8043/5E9EE9F0/5FC4D37E" Ref="R?"  Part="1" 
+AR Path="/5E5C8043/5EA19CBA/5FC4D37E" Ref="R?"  Part="1" 
+AR Path="/5E5C8043/5E49A000/5FC4D37E" Ref="R?"  Part="1" 
+AR Path="/5E5C8043/5EAB3002/5FC4D37E" Ref="R?"  Part="1" 
+AR Path="/5E5C8043/5FC4D37E" Ref="R?"  Part="1" 
+AR Path="/5E715318/5FC4D37E" Ref="R?"  Part="1" 
+AR Path="/5FAF778C/5FC4D37E" Ref="R?"  Part="1" 
+AR Path="/5FCEDB09/5FAC6B33/5FC4D37E" Ref="R?"  Part="1" 
+F 0 "R?" V 15263 2500 50  0000 C CNN
+F 1 "100k" V 15354 2500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 15190 2490 50  0001 C CNN
+F 3 "~" H 15150 2500 50  0001 C CNN
+F 4 "RC0603FR-07100KL" H 15150 2500 50  0001 C CNN "MPN"
+F 5 "311-100KHRCT-ND" H 15150 2500 50  0001 C CNN "Digikey"
+F 6 "RES SMD 100K OHM 1% 1/10W 0603" H 15150 2500 50  0001 C CNN "Note"
+	1    15150 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FC5AFAE
+P 15400 2550
+F 0 "#PWR?" H 15400 2300 50  0001 C CNN
+F 1 "GND" H 15405 2377 50  0000 C CNN
+F 2 "" H 15400 2550 50  0001 C CNN
+F 3 "" H 15400 2550 50  0001 C CNN
+	1    15400 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15300 2500 15400 2500
+Wire Wire Line
+	15400 2500 15400 2550
 $EndSCHEMATC
