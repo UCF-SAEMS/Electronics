@@ -2101,8 +2101,6 @@ Wire Wire Line
 Wire Wire Line
 	14750 4950 14450 4950
 Connection ~ 14450 4950
-Text Label 12850 4950 0    50   ~ 0
-5V_Main
 Text Label 14850 6750 2    50   ~ 0
 5V_Main
 $Comp
@@ -2362,5 +2360,14 @@ Wire Wire Line
 	13450 4950 13550 4950
 Connection ~ 13550 4950
 Wire Wire Line
-	13250 4950 12750 4950
+	13250 4950 13100 4950
+Text GLabel 13200 4550 2    50   Input ~ 0
+5V_Main
+Wire Wire Line
+	13200 4550 13100 4550
+Wire Wire Line
+	13100 4550 13100 4950
+Connection ~ 13100 4950
+Wire Wire Line
+	13100 4950 12750 4950
 $EndSCHEMATC
