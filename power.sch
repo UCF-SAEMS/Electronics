@@ -1122,6 +1122,10 @@ F 0 "J802" H 9630 3792 50  0000 L CNN
 F 1 "Conn_01x02" H 9630 3701 50  0000 L CNN
 F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 9550 3800 50  0001 C CNN
 F 3 "~" H 9550 3800 50  0001 C CNN
+F 4 "B2B-PH-K-S(LF)(SN)" H 9550 3800 50  0001 C CNN "Digikey"
+F 5 "C131337" H 9550 3800 50  0001 C CNN "LCSC"
+F 6 "B2B-PH-K-S(LF)(SN)" H 9550 3800 50  0001 C CNN "MPN"
+F 7 "CONN HEADER VERT 2POS 2MM" H 9550 3800 50  0001 C CNN "Note"
 	1    9550 3800
 	1    0    0    -1  
 $EndComp
@@ -1245,7 +1249,6 @@ F 7 "C205443" H 8850 4250 50  0001 C CNN "LCSC"
 	1    8850 4250
 	0    1    1    0   
 $EndComp
-Connection ~ 6950 3500
 Wire Wire Line
 	7650 3500 7650 3600
 Wire Wire Line
@@ -1253,8 +1256,6 @@ Wire Wire Line
 Connection ~ 7100 4450
 Wire Wire Line
 	6950 4450 7100 4450
-Wire Wire Line
-	6950 3350 6950 3500
 $Comp
 L Device:C_Small C?
 U 1 1 5FC8DAAE
@@ -1278,7 +1279,7 @@ F 7 "C86016" H 9000 3950 50  0001 C CNN "LCSC"
 	1    9000 3950
 	1    0    0    -1  
 $EndComp
-Text GLabel 6950 3350 1    50   Input ~ 0
+Text GLabel 6950 3050 1    50   Input ~ 0
 5V_Main
 $Comp
 L Device:R_US R?
@@ -1315,6 +1316,10 @@ F 0 "U801" H 8000 4300 50  0000 C CNN
 F 1 "MCP73831-2-OT" H 8050 4200 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 7700 3650 50  0001 L CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 7500 3850 50  0001 C CNN
+F 4 "MCP73831T-2ACI/OTCT-ND" H 7650 3900 50  0001 C CNN "Digikey"
+F 5 "C424093" H 7650 3900 50  0001 C CNN "LCSC"
+F 6 "MCP73831T-2ACI/OT" H 7650 3900 50  0001 C CNN "MPN"
+F 7 "IC CONTROLLR LI-ION 4.2V SOT23-5" H 7650 3900 50  0001 C CNN "Note"
 	1    7650 3900
 	1    0    0    -1  
 $EndComp
@@ -1325,4 +1330,23 @@ Wire Wire Line
 Connection ~ 8650 4000
 Wire Wire Line
 	8650 4000 8850 4000
+$Comp
+L Device:Jumper_NO_Small JP801
+U 1 1 5FE9A978
+P 6950 3350
+AR Path="/5FAF778C/5FE9A978" Ref="JP801"  Part="1" 
+AR Path="/5FCEDB09/5FAC6B33/5FE9A978" Ref="JP?"  Part="1" 
+F 0 "JP801" H 6950 3443 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 6950 3444 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 6950 3350 50  0001 C CNN
+F 3 "~" H 6950 3350 50  0001 C CNN
+F 4 "1" H 6950 3350 50  0001 C CNN "DNP"
+	1    6950 3350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6950 3050 6950 3250
+Wire Wire Line
+	6950 3450 6950 3500
+Connection ~ 6950 3500
 $EndSCHEMATC

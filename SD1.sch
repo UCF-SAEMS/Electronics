@@ -19956,10 +19956,8 @@ Wire Wire Line
 	10650 3350 11200 3350
 Text Label 11200 3350 2    50   ~ 0
 Multi_Press
-Text Label 4600 3950 2    50   ~ 0
-SPKR_Alt
 Text Label 4150 3950 2    50   ~ 0
-SPKR
+SPKR_DRIVE
 Wire Wire Line
 	11150 2150 10650 2150
 Wire Wire Line
@@ -20115,4 +20113,33 @@ Wire Wire Line
 	15300 2500 15400 2500
 Wire Wire Line
 	15400 2500 15400 2550
+Text Notes 12750 3950 0    50   ~ 0
+Buy 2x40 display header, PRT-16764
+$Comp
+L Jumper:Jumper_3_Open JP103
+U 1 1 5FE23178
+P 12800 7400
+F 0 "JP103" H 12800 7531 50  0000 C CNN
+F 1 "Jumper_3_Open" H 12800 7622 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 12800 7400 50  0001 C CNN
+F 3 "~" H 12800 7400 50  0001 C CNN
+	1    12800 7400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	12800 7250 12800 7050
+Wire Wire Line
+	12800 7050 12200 7050
+Wire Wire Line
+	13050 7400 13350 7400
+Wire Wire Line
+	12550 7400 12200 7400
+Text Label 12200 7400 0    50   ~ 0
+SPKR
+Text Label 13350 7400 2    50   ~ 0
+SPKR_Alt
+Text Label 12200 7050 0    50   ~ 0
+SPKR_DRIVE
+Text Notes 13100 7000 0    50   ~ 0
+Need Jumper
 $EndSCHEMATC

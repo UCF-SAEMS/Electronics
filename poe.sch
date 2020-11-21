@@ -2101,8 +2101,6 @@ Wire Wire Line
 Wire Wire Line
 	14750 4950 14450 4950
 Connection ~ 14450 4950
-Text Label 14850 6750 2    50   ~ 0
-5V_Main
 $Comp
 L Connector:TestPoint TP304
 U 1 1 5FB41508
@@ -2120,7 +2118,7 @@ Wire Wire Line
 	14450 6750 14450 6850
 Wire Wire Line
 	14450 7250 14450 7200
-Text GLabel 14550 7200 2    50   Input ~ 0
+Text GLabel 14550 7200 2    50   Output ~ 0
 5V_MainDet
 Wire Wire Line
 	14550 7200 14450 7200
@@ -2361,7 +2359,7 @@ Wire Wire Line
 Connection ~ 13550 4950
 Wire Wire Line
 	13250 4950 13100 4950
-Text GLabel 13200 4550 2    50   Input ~ 0
+Text GLabel 13200 4550 2    50   Output ~ 0
 5V_Main
 Wire Wire Line
 	13200 4550 13100 4550
@@ -2370,4 +2368,6 @@ Wire Wire Line
 Connection ~ 13100 4950
 Wire Wire Line
 	13100 4950 12750 4950
+Text GLabel 14850 6750 2    50   Input ~ 0
+5V_Main
 $EndSCHEMATC
