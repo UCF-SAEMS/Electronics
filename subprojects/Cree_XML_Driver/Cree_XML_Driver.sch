@@ -1948,4 +1948,84 @@ Wire Wire Line
 	6950 6150 7600 6150
 Text Notes 6150 6100 0    50   ~ 0
 RGB + W High Power Modes
+$Comp
+L power:+5V #PWR0147
+U 1 1 5FBAF2C8
+P 1150 3150
+F 0 "#PWR0147" H 1150 3000 50  0001 C CNN
+F 1 "+5V" H 1165 3323 50  0000 C CNN
+F 2 "" H 1150 3150 50  0001 C CNN
+F 3 "" H 1150 3150 50  0001 C CNN
+	1    1150 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  3300 1150 3300
+Wire Wire Line
+	1150 3300 1150 3150
+Wire Wire Line
+	950  3400 1150 3400
+Wire Wire Line
+	1150 3400 1150 3300
+Connection ~ 1150 3300
+Wire Wire Line
+	950  3500 1150 3500
+Wire Wire Line
+	1150 3500 1150 3400
+Connection ~ 1150 3400
+Wire Wire Line
+	950  3600 1150 3600
+Text Label 1150 3600 2    50   ~ 0
+DIN
+$Comp
+L power:GND #PWR0148
+U 1 1 5FBE35DC
+P 1150 4300
+F 0 "#PWR0148" H 1150 4050 50  0001 C CNN
+F 1 "GND" H 1155 4127 50  0000 C CNN
+F 2 "" H 1150 4300 50  0001 C CNN
+F 3 "" H 1150 4300 50  0001 C CNN
+	1    1150 4300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	950  4000 1150 4000
+Wire Wire Line
+	1150 4000 1150 4250
+Wire Wire Line
+	950  3900 1150 3900
+Wire Wire Line
+	1150 3900 1150 4000
+Connection ~ 1150 4000
+Wire Wire Line
+	950  3800 1150 3800
+Wire Wire Line
+	1150 3800 1150 3900
+Connection ~ 1150 3900
+Wire Wire Line
+	950  3700 1150 3700
+Wire Wire Line
+	1150 3700 1150 3800
+Connection ~ 1150 3800
+Wire Wire Line
+	750  4200 750  4250
+Wire Wire Line
+	750  4250 1150 4250
+Connection ~ 1150 4250
+Wire Wire Line
+	1150 4250 1150 4300
+$Comp
+L Connector_Generic_MountingPin:Conn_01x08_MountingPin J103
+U 1 1 5FBAD9A9
+P 750 3600
+F 0 "J103" H 750 4150 50  0000 C CNN
+F 1 "JST 1.25mm" H 750 4050 50  0000 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal" H 750 3600 50  0001 C CNN
+F 3 "~" H 750 3600 50  0001 C CNN
+F 4 "0532610871" H 750 3600 50  0001 C CNN "MPN"
+F 5 "WM7626CT-ND" H 750 3600 50  0001 C CNN "Digikey"
+F 6 "1.25mm JST-like" H 750 3600 50  0001 C CNN "Note"
+	1    750  3600
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
