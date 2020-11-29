@@ -1362,7 +1362,7 @@ LCD_CS
 Text Label 14050 900  2    50   ~ 0
 ~LCD_RESET
 Text Label 11150 2150 2    50   ~ 0
-LCD_RESET
+~LCD_RESET
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5FA62239
