@@ -19146,7 +19146,7 @@ Wire Wire Line
 Text Label 2200 2000 2    50   ~ 0
 WMCU_SWO
 Text Label 2200 1850 2    50   ~ 0
-TARGET_VDD
+WMCU_VDD
 Wire Wire Line
 	2200 1850 1650 1850
 Text Label 2200 1750 2    50   ~ 0
