@@ -839,8 +839,6 @@ Wire Wire Line
 	950  1700 950  1750
 Wire Wire Line
 	1850 1750 1850 2550
-Text Label 2100 2150 0    50   ~ 0
-EN_5V_BST
 Wire Wire Line
 	1250 3650 1600 3650
 $Comp
@@ -1028,7 +1026,7 @@ Wire Wire Line
 Wire Wire Line
 	2050 2100 2050 2150
 Wire Wire Line
-	2050 2150 2550 2150
+	2050 2150 2150 2150
 Wire Wire Line
 	2550 2150 2550 2050
 Wire Wire Line
@@ -1374,4 +1372,13 @@ Wire Wire Line
 	8350 4450 8300 4450
 Wire Wire Line
 	8050 4000 8100 4000
+Text GLabel 2200 2100 2    30   Input ~ 0
+EN_5V_BST
+Wire Wire Line
+	2200 2100 2150 2100
+Wire Wire Line
+	2150 2100 2150 2150
+Connection ~ 2150 2150
+Wire Wire Line
+	2150 2150 2550 2150
 $EndSCHEMATC

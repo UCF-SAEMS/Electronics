@@ -1351,14 +1351,12 @@ Text GLabel 13450 1550 2    40   Input ~ 0
 SPI_MOSI
 Text GLabel 13850 1700 2    40   Output ~ 0
 SPI_MISO
-Text Label 11150 1750 2    50   ~ 0
+Text Label 11150 1850 2    50   ~ 0
 SD_CS
-Text Label 11150 2050 2    50   ~ 0
+Text Label 11150 1950 2    50   ~ 0
 FONT_CS
 Text Label 14050 1050 2    50   ~ 0
 ~LCD_CS
-Text Label 4100 4050 0    50   ~ 0
-LCD_CS
 Text Label 14050 900  2    50   ~ 0
 ~LCD_RESET
 Text Label 11150 2150 2    50   ~ 0
@@ -1394,9 +1392,9 @@ Wire Wire Line
 	13450 1400 13500 1400
 Text Label 14050 1250 2    50   ~ 0
 LCD_DC
-Text Label 11150 1950 2    50   ~ 0
+Text Label 11150 2050 2    50   ~ 0
 LCD_DC
-Text Label 4100 4250 0    50   ~ 0
+Text Label 5100 3500 0    50   ~ 0
 LCD_BACKLIGHT
 Wire Wire Line
 	14050 900  13450 900 
@@ -19731,7 +19729,7 @@ U 1 1 5FAABC3D
 P 6400 7650
 F 0 "U109" H 6097 7671 50  0000 R CNN
 F 1 "SCD30" H 6097 7580 50  0000 R CNN
-F 2 "mylib:SCD30" V 6400 7650 50  0001 C CNN
+F 2 "mylib:SCD30_reverse_mount" V 6400 7650 50  0001 C CNN
 F 3 "https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/9.5_CO2/Sensirion_CO2_Sensors_SCD30_Datasheet.pdf" V 6675 7825 50  0001 C CNN
 F 4 "SCD30" H 6400 7650 50  0001 C CNN "MPN"
 F 5 "1649-1098-ND" H 6400 7650 50  0001 C CNN "Digikey"
@@ -19800,10 +19798,6 @@ F1 "power.sch" 50
 $EndSheet
 Text GLabel 5800 3800 0    50   Input ~ 0
 5V_MainDet
-Wire Wire Line
-	11150 1850 10650 1850
-Text Label 11150 1850 2    50   ~ 0
-EN_5V_BST
 Text Notes 3700 8800 0    50   ~ 0
 Particulates
 Text Notes 7950 6400 0    50   ~ 0
@@ -19857,49 +19851,29 @@ Wire Wire Line
 Text Label 5400 3700 0    50   ~ 0
 CO_ADC
 Wire Wire Line
-	4100 3850 4600 3850
-Text Label 4100 3850 0    50   ~ 0
+	5300 4100 5800 4100
+Text Label 5300 4100 0    50   ~ 0
 PIR_SENSE
-Text Label 4100 4350 0    50   ~ 0
+Text Label 5300 3600 0    50   ~ 0
 CTP_INT
 Wire Wire Line
 	11150 2250 10650 2250
 Text Label 11150 2250 2    50   ~ 0
 ~ETH_RST
-Wire Wire Line
-	4100 3750 4600 3750
-Text Label 4100 3750 0    50   ~ 0
-~ETH_INT
-Wire Wire Line
-	4100 3650 4600 3650
-Text Label 4100 3650 0    50   ~ 0
-ETH_CS
-Text Label 4200 4550 0    50   ~ 0
+Text Label 5450 2800 0    50   ~ 0
 IO_INT
 Wire Wire Line
-	4200 4550 4550 4550
+	5450 2800 5800 2800
 Wire Wire Line
 	11150 2350 10650 2350
 Text Label 11150 2350 2    50   ~ 0
 VOC_INT
-Wire Wire Line
-	10650 2650 11200 2650
-Wire Wire Line
-	10650 2750 11200 2750
-Wire Wire Line
-	10650 2850 11200 2850
-Text Label 11200 2650 2    50   ~ 0
-I_LED_R
-Text Label 11200 2750 2    50   ~ 0
-I_LED_G
-Text Label 11200 2850 2    50   ~ 0
-I_LED_B
 NoConn ~ 8550 10150
 Wire Wire Line
 	8100 9750 8550 9750
 Text Label 8100 9750 0    50   ~ 0
 EXT_Sleep
-Text Label 10650 2450 0    50   ~ 0
+Text Label 10650 1750 0    50   ~ 0
 EXT_Sleep
 Wire Wire Line
 	14550 3200 14150 3200
@@ -19956,12 +19930,10 @@ Wire Wire Line
 	10650 3350 11200 3350
 Text Label 11200 3350 2    50   ~ 0
 Multi_Press
-Text Label 4100 3950 0    50   ~ 0
+Text Label 5300 2900 0    50   ~ 0
 SPKR_DRIVE
 Wire Wire Line
 	11150 2150 10650 2150
-Wire Wire Line
-	11150 2050 10650 2050
 Wire Wire Line
 	11150 1950 10650 1950
 $Comp
@@ -20062,7 +20034,7 @@ F 3 "" H 6500 4700 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	11150 1750 10650 1750
+	11150 1850 10650 1850
 Text GLabel 5800 3900 0    50   Input ~ 0
 BATT_Det
 Wire Wire Line
@@ -20233,6 +20205,63 @@ Wire Wire Line
 	14950 7200 14500 7200
 Text Label 14500 7200 0    50   ~ 0
 RGBW_DOUT
-Text Label 4100 4150 0    50   ~ 0
+Text Label 5300 4000 0    50   ~ 0
 RGBW_DOUT
+Text Label 11200 2650 2    50   ~ 0
+I_LED_B
+Text Label 11200 2750 2    50   ~ 0
+I_LED_G
+Text Label 11200 2850 2    50   ~ 0
+I_LED_R
+Wire Wire Line
+	10650 2650 11200 2650
+Wire Wire Line
+	10650 2750 11200 2750
+Wire Wire Line
+	10650 2850 11200 2850
+Wire Wire Line
+	2200 2700 1650 2700
+Text Label 2200 2700 2    50   ~ 0
+WMCU_CTS
+Wire Wire Line
+	1650 2600 1700 2600
+$Comp
+L Device:Jumper_NO_Small JP107
+U 1 1 5FFF492F
+P 1800 2600
+F 0 "JP107" H 1800 2693 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 1800 2694 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1800 2600 50  0001 C CNN
+F 3 "~" H 1800 2600 50  0001 C CNN
+	1    1800 2600
+	1    0    0    -1  
+$EndComp
+Text Label 2300 2600 2    50   ~ 0
+WMCU_RTS
+Wire Wire Line
+	2300 2600 1900 2600
+Text GLabel 10650 2450 2    40   Input ~ 0
+EN_5V_BST
+Wire Wire Line
+	10650 2050 11150 2050
+Text Label 5300 2100 0    50   ~ 0
+ETH_CS
+Wire Wire Line
+	5300 2100 5800 2100
+Text Label 5300 2000 0    50   ~ 0
+~ETH_INT
+Wire Wire Line
+	5300 2000 5800 2000
+Wire Wire Line
+	5300 2900 5800 2900
+Wire Wire Line
+	5300 2500 5800 2500
+Text Label 5300 2500 0    50   ~ 0
+~LCD_CS
+Wire Wire Line
+	5300 3600 5800 3600
+Wire Wire Line
+	5300 4000 5800 4000
+Wire Wire Line
+	5100 3500 5800 3500
 $EndSCHEMATC
