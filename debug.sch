@@ -807,4 +807,6 @@ F 3 "" H 950 2550 50  0001 C CNN
 	1    950  2550
 	1    0    0    -1  
 $EndComp
+Text Label 1350 2700 0    50   ~ 0
+5V_USB
 $EndSCHEMATC
