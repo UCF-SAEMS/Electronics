@@ -14567,33 +14567,8 @@ F 3 "" H 9350 10250 50  0001 C CNN
 	1    9350 10250
 	-1   0    0    -1  
 $EndComp
-NoConn ~ 8550 9550
 NoConn ~ 8550 10050
 NoConn ~ 8550 10250
-$Comp
-L mylib:RECAPS_Master_r0 J?
-U 1 1 5FAEBA7D
-P 8850 9800
-AR Path="/5B315020/5FAEBA7D" Ref="J?"  Part="1" 
-AR Path="/5E7F0E36/5FAEBA7D" Ref="J?"  Part="1" 
-AR Path="/5EAEE4A6/5FAEBA7D" Ref="J?"  Part="1" 
-AR Path="/5EBCC09F/5FAEBA7D" Ref="J?"  Part="1" 
-AR Path="/5EBCC0E4/5FAEBA7D" Ref="J?"  Part="1" 
-AR Path="/5F039000/5FAEBA7D" Ref="J?"  Part="1" 
-AR Path="/5F039043/5FAEBA7D" Ref="J?"  Part="1" 
-AR Path="/5FE46632/5FAEBA7D" Ref="J?"  Part="1" 
-AR Path="/5FE6596A/5FAEBA7D" Ref="J?"  Part="1" 
-AR Path="/5FAEBA7D" Ref="J102"  Part="1" 
-F 0 "J102" H 8768 9175 50  0000 C CNN
-F 1 "JST 1.25mm" H 8768 9266 50  0000 C CNN
-F 2 "Connector_Molex:Molex_PicoBlade_53398-0871_1x08-1MP_P1.25mm_Vertical" H 8850 9800 50  0001 C CNN
-F 3 "" H 8850 9800 50  0001 C CNN
-F 4 "0533980871" H 8850 9800 50  0001 C CNN "MPN"
-F 5 "-" H 8850 9800 50  0001 C CNN "Mouser"
-F 6 "WM7612CT-ND" H 8850 9800 50  0001 C CNN "Digikey"
-	1    8850 9800
-	-1   0    0    -1  
-$EndComp
 Text Notes 16900 4400 0    50   ~ 0
 See: https://www.buydisplay.com/download/interfacing/ER-TFTM028-4_Interfacing.pdf
 NoConn ~ 13450 1850
@@ -20305,4 +20280,43 @@ Wire Wire Line
 	1250 5250 1250 5200
 Wire Wire Line
 	1500 5250 1500 5200
+$Comp
+L mylib:RECAPS_Master_r0 J?
+U 1 1 5FAEBA7D
+P 8850 9800
+AR Path="/5B315020/5FAEBA7D" Ref="J?"  Part="1" 
+AR Path="/5E7F0E36/5FAEBA7D" Ref="J?"  Part="1" 
+AR Path="/5EAEE4A6/5FAEBA7D" Ref="J?"  Part="1" 
+AR Path="/5EBCC09F/5FAEBA7D" Ref="J?"  Part="1" 
+AR Path="/5EBCC0E4/5FAEBA7D" Ref="J?"  Part="1" 
+AR Path="/5F039000/5FAEBA7D" Ref="J?"  Part="1" 
+AR Path="/5F039043/5FAEBA7D" Ref="J?"  Part="1" 
+AR Path="/5FE46632/5FAEBA7D" Ref="J?"  Part="1" 
+AR Path="/5FE6596A/5FAEBA7D" Ref="J?"  Part="1" 
+AR Path="/5FAEBA7D" Ref="J102"  Part="1" 
+F 0 "J102" H 8768 9175 50  0000 C CNN
+F 1 "JST 1.25mm" H 8768 9266 50  0000 C CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53398-0871_1x08-1MP_P1.25mm_Vertical" H 8850 9800 50  0001 C CNN
+F 3 "" H 8850 9800 50  0001 C CNN
+F 4 "0533980871" H 8850 9800 50  0001 C CNN "MPN"
+F 5 "-" H 8850 9800 50  0001 C CNN "Mouser"
+F 6 "WM7612CT-ND" H 8850 9800 50  0001 C CNN "Digikey"
+	1    8850 9800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 9550 8550 9550
+Wire Wire Line
+	8450 9450 8450 9550
+$Comp
+L power:+5V #PWR0144
+U 1 1 5FD50347
+P 8450 9450
+F 0 "#PWR0144" H 8450 9300 50  0001 C CNN
+F 1 "+5V" H 8465 9623 50  0000 C CNN
+F 2 "" H 8450 9450 50  0001 C CNN
+F 3 "" H 8450 9450 50  0001 C CNN
+	1    8450 9450
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
