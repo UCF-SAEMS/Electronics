@@ -559,6 +559,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/tlv62585.pdf" H 1700 4200 50  0001 C CNN
 F 4 "TLV62585DRLR" H 1950 3750 50  0001 C CNN "MPN"
 F 5 "296-51694-1-ND" H 1950 3750 50  0001 C CNN "Digikey"
 F 6 "IC REG BUCK ADJUSTABLE 3A SOT563" H 1950 3750 50  0001 C CNN "Note"
+F 7 "C485117" H 1950 3750 50  0001 C CNN "LCSC"
 	1    1950 3750
 	1    0    0    -1  
 $EndComp
@@ -822,6 +823,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/tps61022.pdf" H 2950 1900 50  0001 C CNN
 F 4 "TPS61022" H 2950 1900 50  0001 C CNN "MPN"
 F 5 "296-TPS61022RWURCT-ND" H 2950 1900 50  0001 C CNN "Digikey"
 F 6 "Boost Switching Regulator IC Positive Adjustable 2.2V 1 Output  7-VFQFN" H 2950 1900 50  0001 C CNN "Note"
+F 7 "Texas Instruments" H 2950 1900 50  0001 C CNN "Manufacturer"
 	1    2950 1900
 	1    0    0    -1  
 $EndComp
@@ -1299,6 +1301,7 @@ F 4 "MCP73831T-2ACI/OTCT-ND" H 7650 3900 50  0001 C CNN "Digikey"
 F 5 "C424093" H 7650 3900 50  0001 C CNN "LCSC"
 F 6 "MCP73831T-2ACI/OT" H 7650 3900 50  0001 C CNN "MPN"
 F 7 "IC CONTROLLR LI-ION 4.2V SOT23-5" H 7650 3900 50  0001 C CNN "Note"
+F 8 "Microchip Technology" H 7650 3900 50  0001 C CNN "Manufacturer"
 	1    7650 3900
 	1    0    0    -1  
 $EndComp

@@ -14547,9 +14547,9 @@ F 1 "MCP23017" H 9650 3500 50  0000 C CNN
 F 2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" H 10000 1600 50  0001 L CNN
 F 3 "" H 10200 3550 50  0001 C CNN
 F 4 "MCP23017T-E/SS" H 9950 2550 60  0001 C CNN "MPN"
-F 5 "" H 9950 2550 60  0001 C CNN "Mouser"
-F 6 "MCP23017T-E/SSCT-ND" H 9950 2550 60  0001 C CNN "Digikey"
-F 7 "IC I/O EXPANDER 16BIT I2C 28SSOP" H 9950 2550 50  0001 C CNN "Note"
+F 5 "MCP23017T-E/SSCT-ND" H 9950 2550 60  0001 C CNN "Digikey"
+F 6 "IC I/O EXPANDER 16BIT I2C 28SSOP" H 9950 2550 50  0001 C CNN "Note"
+F 7 "Microchip Technology" H 9950 2550 50  0001 C CNN "Manufacturer"
 	1    9950 2550
 	1    0    0    -1  
 $EndComp
@@ -19179,6 +19179,7 @@ F 3 "https://www3.panasonic.biz/ac/ae/search_num/index.jsp?c=detail&part_no=EKMC
 F 4 "EKMC1691111" H 6300 10000 50  0001 C CNN "MPN"
 F 5 "255-6303-ND" H 6300 10000 50  0001 C CNN "Digikey"
 F 6 "Sensor PIR (Passive Infrared) 98.425\" (2.5m) - Module" H 6300 10000 50  0001 C CNN "Note"
+F 7 "Panasonic Electric Works" H 6300 10000 50  0001 C CNN "Manufacturer"
 	1    6300 10000
 	1    0    0    -1  
 $EndComp

@@ -158,6 +158,7 @@ F 3 "http://ams.com/eng/Products/Environmental-Sensors/Air-Quality-Sensors/CCS81
 F 4 "CCS811B-JOPR5K" H 5700 3900 50  0001 C CNN "MPN"
 F 5 "CCS811B-JOPR5KCT-ND" H 5700 3900 50  0001 C CNN "Digikey"
 F 6 "CCS811B-JOPR5K LGA10 LF T&R" H 5700 3900 50  0001 C CNN "Note"
+F 7 "ScioSense" H 5700 3900 50  0001 C CNN "Manufacturer"
 	1    5700 3900
 	1    0    0    -1  
 $EndComp

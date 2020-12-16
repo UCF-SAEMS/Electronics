@@ -36,6 +36,7 @@ F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADPD188
 F 4 "ADPD188BI-ACEZR7" H 5400 4350 50  0001 C CNN "MPN"
 F 5 "ADPD188BI-ACEZR7" H 5400 4350 50  0001 C CNN "Digikey"
 F 6 "SENSOR SMOKE 470NM/850NM AMB 24LGA" H 5400 4350 50  0001 C CNN "Note"
+F 7 "Analog Devices Inc." H 5400 4350 50  0001 C CNN "Manufacturer"
 	1    5400 4350
 	1    0    0    -1  
 $EndComp
