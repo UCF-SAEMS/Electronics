@@ -1,0 +1,306 @@
+kibot:
+  version: 1
+preflight:
+  run_erc: false
+  update_xml: true
+  run_drc: false
+  check_zone_fills: true
+  ignore_unconnected: false
+filters:
+ - name: 'exclude_display'
+   type: 'generic'
+   comment: 'Hide the debug display'
+   exclude_any:
+     - column: Value
+       regex: '^ER-TFTM028-4*'
+outputs:
+#
+# Generate assembly assets: gerber, drills, and position files
+#
+  - name: 'gerbers'
+    comment: 'Gerbers for the board house'
+    type: gerber
+    dir: 'build/gerber'
+    options:
+      # generic layer options
+      exclude_edge_layer: true
+      exclude_pads_from_silkscreen: true
+      use_aux_axis_as_origin: false
+      plot_sheet_reference: false
+      plot_footprint_refs: true
+      plot_footprint_values: false
+      force_plot_invisible_refs_vals: false
+      tent_vias: true
+      # gerber options
+      line_width: 0.1
+      subtract_mask_from_silk: false
+      use_protel_extensions: false
+      gerber_precision: 4.6
+      create_gerber_job_file: true
+      use_gerber_x2_attributes: false
+      use_gerber_net_attributes: true
+    layers: 'selected'
+  - name: 'excellon_drill'
+    comment: 'drill excellon'
+    type: "excellon"
+    dir: 'build/gerber'
+    options:
+      map: 'dxf'
+      metric_units: false
+      minimal_header: false
+      mirror_y_axis: false
+      pth_and_npth_single_file: false
+      use_aux_axis_as_origin: false
+  - name: 'position'
+    comment: "Pick and place file"
+    type: position
+    dir: 'build'
+    options:
+      format: CSV
+      units: millimeters
+      separate_files_for_front_and_back: false
+      only_smd: false
+#
+# Generate CAD: step 3d  model
+#
+  - name: 'https://www.freecadweb.org/'
+    comment: '3D step model'
+    type: 'step'
+    dir: 'build/cad'
+    options:
+      dnf_filter: 'exclude_display'
+      metric_units: true
+      min_distance: -1
+      no_virtual: false
+      origin: 'grid'
+      output: '%f.%x'
+  - name: 'https://www.freecadweb.org/'
+    comment: '3D step model'
+    type: 'step'
+    dir: 'build/cad'
+    options:
+      metric_units: true
+      min_distance: -1
+      no_virtual: false
+      origin: 'grid'
+      output: '%f_wdisplay.%x'
+#
+# Generate board screenshots: svg
+#
+  - name: 'https://github.com/yaqwsx/PcbDraw'
+    comment: 'default green svg top'
+    type: 'pcbdraw'
+    dir: 'docs/img'
+    options:
+      bottom: false
+      mirror: true
+      dpi: 300
+      format: 'svg'
+      mirror: false
+      no_drillholes: false
+      show_components: 'none'
+      style: '/usr/share/pcbdraw/styles/jlcpcb-green-enig.json'
+  - name: 'https://github.com/yaqwsx/PcbDraw'
+    comment: 'default green svg bottom'
+    type: 'pcbdraw'
+    dir: 'docs/img'
+    options:
+      bottom: true
+      mirror: false
+      dpi: 300
+      format: 'svg'
+      no_drillholes: false
+      show_components: 'none'
+      style: '/usr/share/pcbdraw/styles/jlcpcb-green-enig.json'
+#
+# Generate schematic and layout docs: svg
+#
+  # Print normal pdf schematic
+  - name: 'print schema'
+    comment: "Print schematic (PDF)"
+    type: pdf_sch_print
+    dir: docs
+  # Print normal schematic as svg
+  - name: 'print schema'
+    comment: "Print schematic (SVG)"
+    type: svg_sch_print
+    dir: docs/img
+  # Print mechanical outline
+  - name: 'print board mechanics'
+    comment: "Print board (PDF)"
+    type: pdf_pcb_print
+    layers:
+      - Dwgs.User
+      - Edge.Cuts
+      - F.CrtYd
+    dir: docs
+    options:
+      drill_marks: full #[string='full'] what to use to indicate the drill places, can be none, small or full (for real scale).
+      output: '%f-mechanic.%x' #[string='%f-%i%v.%x'] filename for the output PDF (%i=layers, %x=pdf). Affected by global options.
+      plot_sheet_reference: true # [boolean=true] include the title-block.
+  # Print documentation info
+  - name: 'print board documentation'
+    comment: "Print board (PDF)"
+    type: pdf_pcb_print
+    layers:
+      - Edge.Cuts
+      - Cmts.User
+      - F.Fab
+    dir: docs
+    options:
+      output: '%f-documentation.%x' #[string='%f-%i%v.%x'] filename for the output PDF (%i=layers, %x=pdf). Affected by global options.
+      plot_sheet_reference: true # [boolean=true] include the title-block.
+#
+# Generate bill of materials: csv, interactive bom
+#
+  - name: 'bom_internal'
+    comment: "Bill of Materials in CSV format"
+    type: bom
+    dir: 'docs/bom'
+    options:
+      csv:
+        hide_pcb_info: false
+      component_aliases: [['r', 'r_small', 'res', 'resistor'], ['l', 'l_small', 'inductor'], ['c', 'c_small', 'cap', 'capacitor'], ['sw', 'switch'], ['zener', 'zenersmall'], ['d', 'diode', 'd_small']]
+      # [number=1] Number of boards to build (components multiplier)
+      number: 1
+      # [string='%f-%i%v.%x'] filename for the output (%i=bom). Affected by global options
+      output: '%f-%i%v.%x'
+
+  # - name: 'https://github.com/SchrodingersGat/KiBoM'
+  #   comment: 'bom.csv'
+  #   type: 'bom'
+  #   dir: 'docs/bom'
+  #   options:
+  #     # [string|dict] BoM configuration file, relative to PCB.
+  #     # You can also define the configuration here, will be stored in `config.kibom.ini`
+  #     conf:
+  #       # [list(dict)|list(string)] List of columns to display.
+  #       # Can be just the name of the field
+  #       # columns:
+  #         # [string=''] Name of the field to use for this column
+  #         # field: ''
+  #         # [list(string)|string=''] List of fields to join to this column
+  #         # join: ''
+  #         # [string=''] Name to display in the header. The field is used when empty
+  #         # name: ''
+  #       # [list(list(string))] A series of values which are considered to be equivalent for the part name.
+  #       # Each entry is a list of equivalen names. Example: ['c', 'c_small', 'cap' ]
+  #       # will ensure the equivalent capacitor symbols can be grouped together.
+  #       # If empty the following aliases are used:
+  #       # - ['r', 'r_small', 'res', 'resistor']
+  #       # - ['l', 'l_small', 'inductor']
+  #       # - ['c', 'c_small', 'cap', 'capacitor']
+  #       # - ['sw', 'switch']
+  #       # - ['zener', 'zenersmall']
+  #       # - ['d', 'diode', 'd_small']
+  #       component_aliases: [['r', 'r_small', 'res', 'resistor'], ['l', 'l_small', 'inductor'], ['c', 'c_small', 'cap', 'capacitor'], ['sw', 'switch'], ['zener', 'zenersmall'], ['d', 'diode', 'd_small']]
+  #       # [string=''] Column with links to the datasheet (HTML only)
+  #       datasheet_as_link: 'Datasheet'
+  #       # [string|list(string)=''] Column/s containing Digi-Key part numbers, will be linked to web page (HTML only)
+  #       digikey_link: ''
+  #       # [list(dict)] A series of regular expressions used to exclude parts.
+  #       # If a component matches ANY of these, it will be excluded.
+  #       # Column names are case-insensitive.
+  #       # If empty the following list is used:
+  #       exclude_filter:
+  #         - column: References
+  #           regex: '^TP[0-9]*'
+  #         - column: References
+  #           regex: '^FID'
+  #         - column: Part
+  #           regex: 'mount.*hole'
+  #         - column: Part
+  #           regex: 'solder.*bridge'
+  #         - column: Part
+  #           regex: 'test.*point'
+  #         - column: Footprint
+  #           regex: 'test.*point'
+  #         - column: Footprint
+  #           regex: 'mount.*hole'
+  #         - column: Footprint
+  #           regex: 'fiducial'
+  #         - column: References
+  #           regex: 'LOGO'
+  #       # [string='Config'] Field name used to determine if a particular part is to be fitted (also DNC and variants)
+  #       # fit_field: 'Variant'
+  #       # [boolean=true] Connectors with the same footprints will be grouped together, independent of the name of the connector
+  #       group_connectors: true
+  #       # [list(string)] List of fields used for sorting individual components into groups.
+  #       # Components which match (comparing *all* fields) will be grouped together.
+  #       # Field names are case-insensitive.
+  #       # If empty: ['Part', 'Part Lib', 'Value', 'Footprint', 'Footprint Lib'] is used
+  #       group_fields: ['Part', 'Part Lib', 'Value', 'Footprint', 'Footprint Lib']
+  #       # [boolean=false] Hide column headers
+  #       hide_headers: false
+  #       # [boolean=false] Hide project information
+  #       hide_pcb_info: false
+  #       # [boolean=true] Generate a separated section for DNF (Do Not Fit) components (HTML only)
+  #       html_generate_dnf: true
+  #       # [boolean=true] Exclude DNF (Do Not Fit) components
+  #       ignore_dnf: true
+  #       # [list(dict)] A series of regular expressions used to select included parts.
+  #       # If there are any regex defined here, only components that match against ANY of them will be included.
+  #       # Column names are case-insensitive.
+  #       # If empty all the components are included
+  #       # include_only:
+  #         # [string=''] Name of the column to apply the regular expression
+  #         # column: ''
+  #         # `field` is an alias for `column`
+  #         # [string=''] Regular expression to match
+  #         # regex: ''
+  #         # `regexp` is an alias for `regex`
+  #       # [boolean=true] Component groups with blank fields will be merged into the most compatible group, where possible
+  #       merge_blank_fields: true
+  #       # [boolean=true] First column is the row number
+  #       number_rows: true
+  #       # [boolean=true] Each component group will be tested against a number of regular-expressions (see ``).
+  #       test_regex: true
+  #       # [boolean=false] Print grouped references in the alternate compressed style eg: R1-R7,R18
+  #       use_alt: false
+  #     # [string='HTML'] [HTML,CSV,XML,XLSX] format for the BoM
+  #     format: 'CSV'
+  #     # [number=1] Number of boards to build (components multiplier)
+  #     number: 1
+  #     # [string='%f-%i%v.%x'] filename for the output (%i=bom). Affected by global options
+  #     output: '%f-%i%v.%x'
+  #     # [string=','] CSV Separator
+  #     separator: ','
+  #     # [string=''] Board variant(s), used to determine which components
+  #     # are output to the BoM. To specify multiple variants,
+  #     # with a BOM file exported for each variant, separate
+  #     # variants with the ';' (semicolon) character.
+  #     # This isn't related to the KiBot concept of variants
+  #     variant: ''
+  # User friendly interactive html bom
+  - name: 'https://github.com/openscopeproject/InteractiveHtmlBom'
+    comment: 'ibom.html'
+    type: 'ibom'
+    dir: 'docs/bom'
+    options:
+      blacklist: ''
+      blacklist_empty_val: false
+      board_rotation: 0
+      bom_view: 'left-right'
+      # checkboxes: 'Sourced,Placed'
+      dark_mode: false
+      # dnf_filter: ''
+      # dnp_field: ''
+      # extra_fields: 'MPN,variant'
+      hide_pads: false
+      hide_silkscreen: false
+      highlight_pin1: true
+      include_nets: true
+      include_tracks: true
+      layer_view: 'FB'
+      # name_format: 'ibom'
+      # netlist_file: ''
+      no_blacklist_virtual: false
+      no_redraw_on_drag: false
+      normalize_field_case: true
+      output: '%f-%i%v.%x'
+      show_fabrication: false
+      sort_order: 'C,R,L,D,U,Y,X,F,SW,A,~,HS,CNN,J,P,NT,MH'
+      # variant: ''
+      # variant_field: ''
+      # variants_blacklist: ''
+      # variants_whitelist: ''

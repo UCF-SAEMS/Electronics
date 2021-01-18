@@ -5,6 +5,7 @@
 *.000
 *.bak
 *.bck
+*.pro-bak
 *.kicad_pcb-bak
 *.kicad_sch-bak
 *.kicad_prl
@@ -22,10 +23,3 @@ fp-info-cache
 # Autorouter files (exported from Pcbnew)
 *.dsn
 *.ses
-
-# Exported BOM files
-*.xml
-*.csv
-
-#Gerber output
-*gerber/

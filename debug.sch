@@ -745,7 +745,7 @@ Text Label 4600 2100 0    50   ~ 0
 Wire Wire Line
 	4600 3200 4600 2100
 $Comp
-L SD1-rescue:USB_B_Micro-Connector J403
+L Connector:USB_B_Micro J403
 U 1 1 5F75B1A8
 P 3500 3400
 F 0 "J403" H 3557 3867 50  0000 C CNN
