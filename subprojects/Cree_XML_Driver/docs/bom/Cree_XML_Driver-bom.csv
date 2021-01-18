@@ -1,0 +1,35 @@
+Row,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet,LCSC,Manufacturer,Digikey,MPN,Note,DNP,RDS
+1,"Unpolarized capacitor, small symbol",C_Small,C109 C110 C111,0.1u,C_0603_1608Metric,3,~,C314282,Walsin,1292-1643-1-ND,0603B104K500CT,CAP CER 0.1UF 50V X7R 0603,,
+2,"Unpolarized capacitor, small symbol",C_Small,C101 C102 C103 C104 C105 C106 C107 C108,10u,C_0805_2012Metric,8,~,C77075,Murata Electronics,490-3886-1-ND,GRM21BR61C106KE15L,CAP CER 10UF 16V X5R 0805,,
+3,"RGB LED, 6 pin package with exposed pad",LED_RGBW_EP,D101,Cree XM-L,LED_Cree_XM-L_20mm_Module,1,https://www.cree.com/led-components/media/documents/XLampXML_Color.pdf,,,,,,1,
+4,"Schottky diode, filled shape",D_Schottky_ALT,D102,PMEG4030,D_SOD-123F,1,~,C389355,,1727-5313-1-ND,"PMEG4030ER,115",DIODE SCHOTTKY 40V 3A SOD123W,,
+5,"Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x03,J102,Conn_01x03,PinHeader_1x03_P2.54mm_Horizontal,1,~,,,,,,1,
+6,"Generic connectable mounting pin connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x08_MountingPin,J103,JST 1.25mm,Molex_PicoBlade_53261-0871_1x08-1MP_P1.25mm_Horizontal,1,~,C29041,,WM7626CT-ND,0532610871,1.25mm JST-like 01x08,,
+7,DC Barrel Jack with an internal switch,Barrel_Jack_Switch,J101,PJ-102AH,BarrelJack_CUI_PJ-102AH_Horizontal,1,~,C84007,,CP-102AH-ND,PJ-102AH,CONN PWR JACK 2X5.5MM SOLDER,,
+8,Inductor with ferrite core,L_Core_Ferrite,L101 L102 L103 L104,4.7u,L_Taiyo-Yuden_MD-4040,4,~,"C206284, C15269",,587-5994-1-ND,SLW4030S4R7MST,"4.7uH ±20% 2A 60mΩ SMD,4x4x3mm",,
+9,"N-MOSFET transistor, gate/source/drain",Q_NMOS_GSD,Q101 Q102 Q103 Q104,Si2302CDS-T1,SOT-23,4,https://www.vishay.com/docs/68645/si2302cds.pdf,C10488,,SI2302CDS-T1-E3CT-ND,Si2302CDS-T1,MOSFET N-CH 20V 2.6A SOT-23,,0.045@1A
+10,"Resistor, US symbol",R_US,R101 R104 R105 R108,0.120,R_0805_2012Metric,4,~,"C186575, C171368",,RL12S.12FCT-ND,SR732ATTDR120F,0.12 0805 330mW,,
+11,"Resistor, US symbol",R_US,R102 R103 R106 R107,0.270,R_0805_2012Metric,4,~,"C186583, C171374",,RL12S.27FCT-ND,SR732ATTDR270F,0.27 0805 330mW,,
+12,"Resistor, US symbol",R_US,R117 R122,33,R_0603_1608Metric,2,~,C108661,,311-33.0HRCT-ND,RC0603FR-0733RL,,,
+13,"Resistor, US symbol",R_US,R109 R110 R111 R112 R113 R118,100,R_0603_1608Metric,6,~,C105588,,311-100HRCT-ND,RC0603FR-07100RL,,,
+14,"Resistor, US symbol",R_US,R114 R115 R116 R119 R120 R121,100k,R_0603_1608Metric,6,~,C14675,,311-100KHRCT-ND,RC0603FR-07100KL,,,
+15,IC INVERTER SCHMITT 6CH,SN74HC14N-dk_Logic-Gates-and-Inverters,U106,"74HC14D,653",SOIC-14_3.9x8.7mm_P1.27mm,1,,C5605,Nexperia,1727-2783-1-ND,"74HC14D,653",IC INVERTER SCHMITT 6CH 14SO,,
+16,"1A, Step-Down CC Led Driver, 250kHz, TSOT-23",PAM2804,U101 U102 U103 U104,PAM2804,TSOT-23-5,4,https://www.diodes.com/assets/Datasheets/PAM2804.pdf,C71463,Diodes Incorporated,PAM2804AAB010DICT-ND,PAM2804AAB010,IC LED DRIVER RGLTR 1A TSOT25,,
+17,"3-Channel 8-Bit PWM LED Driver, DIP-8/SOIC-8",WS2811,U105 U107,WS2811,SOIC-8_3.9x4.9mm_P1.27mm,2,https://cdn-shop.adafruit.com/datasheets/WS2811.pdf,C114581,Worldsemi,,,,,
+
+
+
+
+
+Project info:
+Schematic:,Cree_XML_Driver
+Variant:,default
+Revision:,
+Date:,2021-01-18_14-16-22
+KiCad Version:,5.1.7-a382d34a8~87~ubuntu18.04.1
+Statistics:
+Component Groups:,17
+Component Count:,53
+Fitted Components:,53
+Number of PCBs:,1
+Total Components:,53
