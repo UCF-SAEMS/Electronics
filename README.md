@@ -7,7 +7,7 @@ This is the main controller board for the SAEMS project. It's main functionality
 ### Block Diagram
 [![Mainboard_Diagram](docs/SAEMS_MainbaordBlock.png)](docs/SAEMS_MainbaordBlock.png)
 
-[Edit on draw.io](https://app.diagrams.net/#HUCF-SAEMS%2FElectronics%2Fmain%2Fsubprojects%2FCree_XML_Driver%2Fdocs%2FSAEMS_MainbaordBlock.png)
+[Edit on draw.io](https://app.diagrams.net/#HUCF-SAEMS%2FElectronics%2Fmain%2Fdocs%2FSAEMS_MainbaordBlock.png)
 
 ### Schematic
 [![STAIR_Mainboard-schematic](docs/img/SD1-schematic.svg)](docs/SD1-schematic.pdf)
