@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/clayt/Documents/KiCad/SD1/Electronics/subprojects/FLASH_MOD/FLASH_MOD.sch</source>
+    <date>Sun 14 Mar 2021 03:13:55 PM EDT</date>
+    <tool>Eeschema 5.1.7-a382d34a8~87~ubuntu18.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>FLASH_MOD.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="LOGO101">
+      <value>MYLIB_CWW_COPPER</value>
+      <footprint>mylib:MYLIB_CWW_COPPER</footprint>
+      <fields>
+        <field name="DNP">1</field>
+      </fields>
+      <libsource lib="mylib" part="MYLIB_CWW_COPPER" description="CWW Logo"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5E6F1CB4</tstamp>
+    </comp>
+    <comp ref="U101">
+      <value>ER-TFTM028-4</value>
+      <footprint>mylib:ER-TFTM028-4</footprint>
+      <datasheet>https://www.buydisplay.com/2-8-inch-tft-touch-shield-for-arduino-w-capacitive-touch-screen-module</datasheet>
+      <fields>
+        <field name="LCSC">C132132</field>
+        <field name="MPN">DS1023-2*20SF11</field>
+        <field name="Note">Header Female 2x20 2.54mm</field>
+      </fields>
+      <libsource lib="mylib" part="ER-TFTM028-4" description="2.8&quot;TFT Touch Shield for Arduino w/Capacitive Touch Screen Module"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F69622B</tstamp>
+    </comp>
+    <comp ref="JP102">
+      <value>SolderJumper_2_Open</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DNP">1</field>
+      </fields>
+      <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>600FCC3D</tstamp>
+    </comp>
+    <comp ref="JP101">
+      <value>SolderJumper_2_Open</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DNP">1</field>
+      </fields>
+      <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>601FC94E</tstamp>
+    </comp>
+    <comp ref="JP1">
+      <value>Jumper_NO_Small</value>
+      <footprint>Resistor_SMD:R_0201_0603Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Jumper_NO_Small" description="Jumper, normally open, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60413E8B</tstamp>
+    </comp>
+    <comp ref="JP2">
+      <value>Jumper_NO_Small</value>
+      <footprint>Resistor_SMD:R_0201_0603Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Jumper_NO_Small" description="Jumper, normally open, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60413E96</tstamp>
+    </comp>
+    <comp ref="JP3">
+      <value>Jumper_NO_Small</value>
+      <footprint>Resistor_SMD:R_0201_0603Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Jumper_NO_Small" description="Jumper, normally open, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60413E9F</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>0.1u</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digikey">1292-1643-1-ND</field>
+        <field name="MPN">0603B104K500CT</field>
+        <field name="Note">CAP CER 0.1UF 50V X7R 0603</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>604ABD3D</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>1u</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Digikey">587-2984-1-ND</field>
+        <field name="MPN">TMK107B7105KA-T</field>
+        <field name="Note">CAP CER 1UF 25V X7R 0603</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>604AD6E4</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Digikey">311-10.0KHRCT-ND</field>
+        <field name="LCSC">C98220</field>
+        <field name="MPN">RC0603FR-0710KL</field>
+        <field name="Note">RES SMD 10K OHM 1% 1/10W 0603</field>
+      </fields>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>604C280F</tstamp>
+    </comp>
+    <comp ref="TP1">
+      <value>TestPoint</value>
+      <footprint>mylib:Jumper_ModPad</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>605F2A20</tstamp>
+    </comp>
+    <comp ref="TP2">
+      <value>TestPoint</value>
+      <footprint>mylib:Jumper_ModPad</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>605F35A3</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>W25Q128JVS</value>
+      <footprint>Package_SO:SOIC-8_5.23x5.23mm_P1.27mm</footprint>
+      <datasheet>http://www.winbond.com/resource-files/w25q128jv_dtr%20revc%2003272018%20plus.pdf</datasheet>
+      <libsource lib="Memory_Flash" part="W25Q128JVS" description="128Mb Serial Flash Memory, Standard/Dual/Quad SPI, SOIC-8"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>602D2C00</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="TestPoint">
+      <description>test point</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Small">
+      <description>Unpolarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Jumper_NO_Small">
+      <description>Jumper, normally open, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>SolderJumper*Open*</fp>
+        <fp>Jumper*</fp>
+        <fp>TestPoint*2Pads*</fp>
+        <fp>TestPoint*Bridge*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">Jumper_NO_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_US">
+      <description>Resistor, US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_US</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Jumper" part="SolderJumper_2_Open">
+      <description>Solder Jumper, 2-pole, open</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>SolderJumper*Open*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">SolderJumper_2_Open</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Memory_Flash" part="W25Q32JVSS">
+      <aliases>
+        <alias>W25Q128JVS</alias>
+      </aliases>
+      <description>32Mb Serial Flash Memory, Standard/Dual/Quad SPI, SOIC-8</description>
+      <docs>http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf</docs>
+      <footprints>
+        <fp>SOIC*5.23x5.23mm*P1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">W25Q32JVSS</field>
+        <field name="Footprint">Package_SO:SOIC-8_5.23x5.23mm_P1.27mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~CS" type="input"/>
+        <pin num="2" name="DO(IO1)" type="BiDi"/>
+        <pin num="3" name="IO2" type="BiDi"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="DI(IO0)" type="BiDi"/>
+        <pin num="6" name="CLK" type="input"/>
+        <pin num="7" name="IO3" type="BiDi"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="mylib" part="ER-TFTM028-4">
+      <description>2.8"TFT Touch Shield for Arduino w/Capacitive Touch Screen Module</description>
+      <docs>https://www.buydisplay.com/2-8-inch-tft-touch-shield-for-arduino-w-capacitive-touch-screen-module</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ER-TFTM028-4</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VSS" type="power_in"/>
+        <pin num="2" name="VDD" type="input"/>
+        <pin num="3" name="DB0" type="power_in"/>
+        <pin num="4" name="DB1" type="input"/>
+        <pin num="5" name="DB3" type="input"/>
+        <pin num="6" name="DB3" type="input"/>
+        <pin num="7" name="DB4" type="input"/>
+        <pin num="8" name="DB5" type="input"/>
+        <pin num="9" name="DB6" type="input"/>
+        <pin num="10" name="DB7" type="input"/>
+        <pin num="11" name="DB8" type="input"/>
+        <pin num="12" name="DB9" type="input"/>
+        <pin num="13" name="DB10" type="input"/>
+        <pin num="14" name="DB11" type="input"/>
+        <pin num="15" name="DB12" type="input"/>
+        <pin num="16" name="DB13" type="input"/>
+        <pin num="17" name="DB14" type="input"/>
+        <pin num="18" name="DB15" type="input"/>
+        <pin num="19" name="DB16" type="input"/>
+        <pin num="20" name="DB17" type="input"/>
+        <pin num="21" name="~RESET" type="input"/>
+        <pin num="22" name="TE" type="input"/>
+        <pin num="23" name="~LCD_CS" type="input"/>
+        <pin num="24" name="LCD_D/C(SCL)" type="input"/>
+        <pin num="25" name="WR(D/C)" type="input"/>
+        <pin num="26" name="RD" type="input"/>
+        <pin num="27" name="LCD_SDI(SDA)" type="input"/>
+        <pin num="28" name="LCD_SDO" type="input"/>
+        <pin num="29" name="BL" type="input"/>
+        <pin num="30" name="RTP_CS(CTP_SCL)" type="input"/>
+        <pin num="31" name="RTP_PEN(CTP_SDA)" type="input"/>
+        <pin num="32" name="SDO" type="input"/>
+        <pin num="33" name="SCL" type="input"/>
+        <pin num="34" name="SDI" type="input"/>
+        <pin num="35" name="SD_CS" type="input"/>
+        <pin num="36" name="FONT_CS" type="input"/>
+        <pin num="37" name="FLASH_CS" type="input"/>
+        <pin num="38" name="FLASH_WP" type="input"/>
+        <pin num="39" name="FLASH_HOLD(CTP_INT)" type="input"/>
+        <pin num="40" name="VSS" type="power_in"/>
+        <pin num="41" name="VSYNC" type="input"/>
+        <pin num="42" name="HSYNC" type="input"/>
+        <pin num="43" name="DOTCLK" type="input"/>
+        <pin num="44" name="DE" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="mylib" part="MYLIB_CWW_COPPER">
+      <description>CWW Logo</description>
+      <footprints>
+        <fp>*MYLIB_CWW_COPPER*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">#CWLOGO</field>
+        <field name="Value">MYLIB_CWW_COPPER</field>
+        <field name="Footprint">MYLIB_CWW_COPPER</field>
+      </fields>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>/usr/share/kicad/library/Connector.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad/library/Device.lib</uri>
+    </library>
+    <library logical="Jumper">
+      <uri>/usr/share/kicad/library/Jumper.lib</uri>
+    </library>
+    <library logical="Memory_Flash">
+      <uri>/usr/share/kicad/library/Memory_Flash.lib</uri>
+    </library>
+    <library logical="mylib">
+      <uri>/home/clayt/Documents/KiCad/lib/mylib.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/~LCD_CS">
+      <node ref="JP2" pin="1"/>
+      <node ref="U101" pin="23"/>
+    </net>
+    <net code="2" name="/LCD_DC">
+      <node ref="JP1" pin="1"/>
+      <node ref="U101" pin="25"/>
+    </net>
+    <net code="3" name="/WMCU_RTS">
+      <node ref="TP2" pin="1"/>
+      <node ref="JP3" pin="1"/>
+    </net>
+    <net code="4" name="/LCD_BACKLIGHT">
+      <node ref="U101" pin="29"/>
+    </net>
+    <net code="5" name="Net-(U101-Pad13)">
+      <node ref="U101" pin="13"/>
+    </net>
+    <net code="6" name="Net-(U101-Pad14)">
+      <node ref="U101" pin="14"/>
+    </net>
+    <net code="7" name="Net-(U101-Pad15)">
+      <node ref="U101" pin="15"/>
+    </net>
+    <net code="8" name="Net-(U101-Pad16)">
+      <node ref="U101" pin="16"/>
+    </net>
+    <net code="9" name="Net-(U101-Pad17)">
+      <node ref="U101" pin="17"/>
+    </net>
+    <net code="10" name="Net-(U101-Pad18)">
+      <node ref="U101" pin="18"/>
+    </net>
+    <net code="11" name="Net-(U101-Pad19)">
+      <node ref="U101" pin="19"/>
+    </net>
+    <net code="12" name="Net-(U101-Pad20)">
+      <node ref="U101" pin="20"/>
+    </net>
+    <net code="13" name="+3V3">
+      <node ref="R1" pin="1"/>
+      <node ref="U101" pin="2"/>
+      <node ref="U1" pin="7"/>
+      <node ref="U1" pin="8"/>
+      <node ref="C2" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="JP101" pin="2"/>
+      <node ref="TP1" pin="1"/>
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="14" name="GND">
+      <node ref="U101" pin="40"/>
+      <node ref="U101" pin="1"/>
+      <node ref="U1" pin="4"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C1" pin="2"/>
+    </net>
+    <net code="15" name="SPI_MISO">
+      <node ref="JP102" pin="2"/>
+      <node ref="U101" pin="32"/>
+      <node ref="U1" pin="2"/>
+    </net>
+    <net code="16" name="SPI_MOSI">
+      <node ref="U1" pin="5"/>
+      <node ref="U101" pin="27"/>
+      <node ref="U101" pin="34"/>
+    </net>
+    <net code="17" name="SPI_SCK">
+      <node ref="U1" pin="6"/>
+      <node ref="U101" pin="24"/>
+      <node ref="U101" pin="33"/>
+    </net>
+    <net code="18" name="Net-(JP1-Pad2)">
+      <node ref="JP3" pin="2"/>
+      <node ref="JP2" pin="2"/>
+      <node ref="R1" pin="2"/>
+      <node ref="JP1" pin="2"/>
+      <node ref="U1" pin="1"/>
+    </net>
+    <net code="19" name="Net-(U101-Pad12)">
+      <node ref="U101" pin="12"/>
+    </net>
+    <net code="20" name="I2C_SDA">
+      <node ref="U101" pin="31"/>
+    </net>
+    <net code="21" name="Net-(U101-Pad41)">
+      <node ref="U101" pin="41"/>
+    </net>
+    <net code="22" name="Net-(U101-Pad42)">
+      <node ref="U101" pin="42"/>
+    </net>
+    <net code="23" name="Net-(U101-Pad43)">
+      <node ref="U101" pin="43"/>
+    </net>
+    <net code="24" name="Net-(U101-Pad44)">
+      <node ref="U101" pin="44"/>
+    </net>
+    <net code="25" name="Net-(U101-Pad5)">
+      <node ref="U101" pin="5"/>
+    </net>
+    <net code="26" name="Net-(U101-Pad6)">
+      <node ref="U101" pin="6"/>
+    </net>
+    <net code="27" name="Net-(U101-Pad7)">
+      <node ref="U101" pin="7"/>
+    </net>
+    <net code="28" name="Net-(U101-Pad8)">
+      <node ref="U101" pin="8"/>
+    </net>
+    <net code="29" name="Net-(U101-Pad9)">
+      <node ref="U101" pin="9"/>
+    </net>
+    <net code="30" name="I2C_SCL">
+      <node ref="U101" pin="30"/>
+    </net>
+    <net code="31" name="Net-(U101-Pad37)">
+      <node ref="U101" pin="37"/>
+    </net>
+    <net code="32" name="Net-(U101-Pad38)">
+      <node ref="U101" pin="38"/>
+    </net>
+    <net code="33" name="Net-(U101-Pad10)">
+      <node ref="U101" pin="10"/>
+    </net>
+    <net code="34" name="Net-(U101-Pad11)">
+      <node ref="U101" pin="11"/>
+    </net>
+    <net code="35" name="Net-(U101-Pad22)">
+      <node ref="U101" pin="22"/>
+    </net>
+    <net code="36" name="Net-(JP102-Pad1)">
+      <node ref="JP102" pin="1"/>
+      <node ref="U101" pin="28"/>
+    </net>
+    <net code="37" name="Net-(U101-Pad3)">
+      <node ref="U101" pin="3"/>
+    </net>
+    <net code="38" name="Net-(U101-Pad4)">
+      <node ref="U101" pin="4"/>
+    </net>
+    <net code="39" name="Net-(JP101-Pad1)">
+      <node ref="U101" pin="26"/>
+      <node ref="JP101" pin="1"/>
+    </net>
+    <net code="40" name="/CTP_INT">
+      <node ref="U101" pin="39"/>
+    </net>
+    <net code="41" name="/~LCD_RESET">
+      <node ref="U101" pin="21"/>
+    </net>
+    <net code="42" name="/FONT_CS">
+      <node ref="U101" pin="36"/>
+    </net>
+    <net code="43" name="/SD_CS">
+      <node ref="U101" pin="35"/>
+    </net>
+  </nets>
+</export>

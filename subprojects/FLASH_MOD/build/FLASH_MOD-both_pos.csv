@@ -1,0 +1,9 @@
+Ref,Val,Package,PosX,PosY,Rot,Side
+"C1","1u","C_0603_1608Metric",211.7090,-81.9150,0.0000,bottom
+"C2","0.1u","C_0603_1608Metric",212.7250,-68.8340,270.0000,bottom
+"JP1","Jumper_NO_Small","R_0201_0603Metric",209.6770,-84.5820,270.0000,bottom
+"JP2","Jumper_NO_Small","R_0201_0603Metric",211.5820,-84.5820,270.0000,bottom
+"JP3","Jumper_NO_Small","R_0201_0603Metric",207.7720,-84.5820,90.0000,bottom
+"R1","10k","R_0603_1608Metric",208.5340,-81.9150,0.0000,bottom
+"U1","W25Q128JVS","SOIC-8_5.23x5.23mm_P1.27mm",209.0420,-72.0090,90.0000,bottom
+"U101","ER-TFTM028-4","ER-TFTM028-4",218.0000,-40.0000,270.0000,top

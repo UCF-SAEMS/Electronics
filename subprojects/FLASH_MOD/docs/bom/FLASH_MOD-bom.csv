@@ -1,0 +1,25 @@
+Row,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet,DNP,MPN,Note,LCSC,Digikey
+1,"Unpolarized capacitor, small symbol",C_Small,C2,0.1u,C_0603_1608Metric,1,~,,0603B104K500CT,CAP CER 0.1UF 50V X7R 0603,,1292-1643-1-ND
+2,"Unpolarized capacitor, small symbol",C_Small,C1,1u,C_0603_1608Metric,1,~,,TMK107B7105KA-T,CAP CER 1UF 25V X7R 0603,,587-2984-1-ND
+3,"Jumper, normally open, small symbol",Jumper_NO_Small,JP1 JP2 JP3,Jumper_NO_Small,R_0201_0603Metric,3,~,,,,,
+4,CWW Logo,MYLIB_CWW_COPPER,LOGO101,MYLIB_CWW_COPPER,MYLIB_CWW_COPPER,1,,1,,,,
+5,"Resistor, US symbol",R_US,R1,10k,R_0603_1608Metric,1,,,RC0603FR-0710KL,RES SMD 10K OHM 1% 1/10W 0603,C98220,311-10.0KHRCT-ND
+6,"2.8""TFT Touch Shield for Arduino w/Capacitive Touch Screen Module",ER-TFTM028-4,U101,ER-TFTM028-4,ER-TFTM028-4,1,https://www.buydisplay.com/2-8-inch-tft-touch-shield-for-arduino-w-capacitive-touch-screen-module,,DS1023-2*20SF11,Header Female 2x20 2.54mm,C132132,
+7,"128Mb Serial Flash Memory, Standard/Dual/Quad SPI, SOIC-8",W25Q128JVS,U1,W25Q128JVS,SOIC-8_5.23x5.23mm_P1.27mm,1,http://www.winbond.com/resource-files/w25q128jv_dtr%20revc%2003272018%20plus.pdf,,,,,
+
+
+
+
+
+Project info:
+Schematic:,FLASH_MOD
+Variant:,default
+Revision:,
+Date:,2021-03-14_15-13-46
+KiCad Version:,5.1.7-a382d34a8~87~ubuntu18.04.1
+Statistics:
+Component Groups:,7
+Component Count:,9
+Fitted Components:,9
+Number of PCBs:,1
+Total Components:,9
